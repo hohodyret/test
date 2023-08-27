@@ -1,3 +1,4 @@
+// https://pastebin.com/raw/qajuVHBz (good aug 27 2023)
 // https://pastebin.com/raw/mkJxaGuW (good on march 9 2023)
 // https://pastebin.com/raw/bPAkJfRz (may 26)
 // https://pastebin.com/raw/Rydupvup (june 1)
@@ -7,20 +8,20 @@ namespace offsets
 {
     // buttons
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    const long IN_ATTACK = 0x07472e98;  // [Buttons] -> in_attack
-    const long IN_FORWARD = 0x074730d8; // [Buttons] -> in_forward
-    const long IN_BACKWARD = 0x07473100;
-    const long IN_JUMP = 0x07472fa8;    // [Buttons] -> in_jump
-    const long IN_WALK = 0x07473068;    // [Buttons] -> in_walk
-    const long IN_RELOAD = 0x07472f18;  // [Buttons] -> in_reload
-    const long IN_DUCK = 0x07473098;    // [Buttons] -> in_duck
+    const long IN_ATTACK = 0x07472f98;  // [Buttons] -> in_attack
+    const long IN_FORWARD = 0x074731d8; // [Buttons] -> in_forward
+    const long IN_BACKWARD = 0x07473200;
+    const long IN_JUMP = 0x07473098;    // [Buttons] -> in_jump
+    const long IN_WALK = 0x07473148;    // [Buttons] -> in_walk
+    const long IN_RELOAD = 0x07473018;  // [Buttons] -> in_reload
+    const long IN_DUCK = 0x07473198;    // [Buttons] -> in_duck
     // core
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long REGION = 0x140000000;              // [Mine]          -> Region
     const long LEVEL = 0x16eed90;                 // [Miscellaneous] -> LevelName
-    const long LOCAL_PLAYER = (0x2224528); // [Miscellaneous] -> AVC_GameMovement+0x8 STILL NEED UPDATE
-    const long ENTITY_LIST = 0x1e743a8;           // [Miscellaneous] -> cl_entitylist
-    const long GAMEMODE = (0x0225d3a0);             // [ConVars]       -> mp_gamemode+0x58 (not sur eif you ened to add 0x58)
+    const long LOCAL_PLAYER = (0x22245c8); // [Miscellaneous] -> AVC_GameMovement+0x8 STILL NEED UPDATE
+    const long ENTITY_LIST = 0x1e74448;           // [Miscellaneous] -> cl_entitylist
+    const long GAMEMODE = (0x0225d440);             // [ConVars]       -> mp_gamemode+0x58 (not sur eif you ened to add 0x58)
     // local player
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long LOCAL_ORIGIN = 0x0188;               // [DataMap.CBaseViewModel]     -> m_localOrigin
@@ -35,7 +36,7 @@ namespace offsets
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long GLOW_ENABLE = (0x03f0 + 0x8);        // [RecvTable.DT_HighlightSettings] -> m_highlightServerContextID + 0x8
     const long GLOW_THROUGH_WALL = (0x03f0 + 0x10); // [RecvTable.DT_HighlightSettings] -> m_highlightServerContextID + 0x10
-    const long GLOW_COLOR = 0x01e8;                  // [RecvTable.DT_HighlightSettings] -> m_highlightParams + 0x18
+    const long GLOW_COLOR = 0x200;                  // [RecvTable.DT_HighlightSettings] -> m_highlightParams + 0x18
     const long TEAM_NUMBER = 0x0480;                // [RecvTable.DT_BaseEntity]        -> m_iTeamNum
     const long NAME = 0x05c1;                       // [RecvTable.DT_BaseEntity]        -> m_iName
     const long LIFE_STATE = 0x07d0;                 // [RecvTable.DT_Player]            -> m_lifeState
